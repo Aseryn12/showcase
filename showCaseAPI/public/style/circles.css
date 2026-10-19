@@ -1,0 +1,42 @@
+.forCircles{
+    margin: 35px auto;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.circles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 80vw;
+}
+
+.forCircle{
+    height: 100px;
+    width: 100px;
+}
+
+.circle{
+    background-color: rgb(36, 36, 56);
+    border: 0px solid;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    transition: 0.5s;
+}
+
+.circleActive{
+    height: 90px;
+    width: 90px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(36, 36, 56);
+}
+
+.circle:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>show-case</title>
+</head>
+<body>
+    <header></header>
+    <main id="main">
+        <article id="welcomeBanner" class="welocmeArticle">
+            <section class="contentWidth contentPosition secForResume">
+                <div class="resumeText">
+                    <span class="inResumeText none">s</span>
+                    <span class="inResumeText none">h</span>
+                    <span class="inResumeText none">o</span>
+                    <span class="inResumeText none">w</span>
+                    <span class="inResumeText none">-</span>
+                    <span class="inResumeText none">c</span>
+                    <span class="inResumeText none">a</span>
+                    <span class="inResumeText none">s</span>
+                    <span class="inResumeText none">e</span>
+                </div>
+                <div class="author">By Egor Parienko</div>
+            </section>
+        </article>
+        <article id="caseArticle" class="caseArticle">
+            <section class="forButton forButtonLeft">
+                <button id="left" class="sliderButton">←</button>
+            </section>
+            <section class="cases" id="forCases">
+                <section class="case" id="case1" data-number="0">
+                    <img class="imgCase" src="images/no_image.png">
+                    <div class="inCase">
+                        <p class="caseDesc">Этот код динамически создаёт 55 пар вложенных div (контейнер + круг) через цикл и добавляет их в DOM одним фрагментом — так страница не перерисовывается на каждой итерации.
+                        Каждому кругу назначается обработчик клика: при нажатии запускается волновой эффект.
+                        Эффект распространяется от выбранного круга влево и вправо по цепочке элементов с задержкой.
+                        Для анимации используются setTimeout, а состояние «активности» управляется переключением класса circleActive.
+                        В итоге получается интерактивный визуальный паттерн</p>
+                        <a class="caseLink" href="pages/circles.html">Circles</a>
+                    </div>
+                </section>
+                <section class="case disabled fade" id="case2" data-number="1">
+                    <img class="imgCase" src="images/no_image.png">
+                    <div class="inCase">
+                        <p class="caseDesc">Реализация интерфейса управления задачами: загружаются задачи с сервера через
+                        fetch и отображаются двух блоках («Ожидает обработки» и «Обрабатывается»). Есть возможность 
+                        добавлять новую задачу через форму с отправкой на сервер и присвоением ID, перемещать задачу 
+                        между статусами по клику с обновлением на бэкенде и визуально анимировать переходы, а также 
+                        удалять завершённые задачи — с запросом к API и плавным исчезновением элемента из DOM.</p>
+                        <a class="caseLink" href="pages/drag.html">Fetch</a>
+                    </div>
+                </section>
+                <section class="case disabled fade" id="case3" data-number="2">
+                    <img class="imgCase" src="images/no_image.png">
+                    <div class="inCase">
+                        <p class="caseDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto esse ab quo non deleniti hic possimus maiores laudantium rem. Praesentium cumque maiores nulla cupiditate corrupti error natus labore accusantium non?</p>
+                        <a class="caseLink">789</a>
+                    </div>
+                </section>
+            </section>
+            <section class="forButton forButtonRight">
+                <button id="right" class="sliderButton">→</button>
+            </section>
+        </article>
+    </main>
+    <footer></footer>
+    <script src="JS/main.js"></script>
+</body>
+</html>
